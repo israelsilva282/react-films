@@ -20,6 +20,7 @@ function Home() {
 
             setFilmes(response.data.results.slice(0, 10));
             setLoading(false);
+            console.log(process.env.API_KEy)
         }
 
         loadFilmes();

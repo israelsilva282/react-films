@@ -12,10 +12,15 @@
 
 .meus-filmes span {
   font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 55%;
 }
 
 .meus-filmes ul {
   width: 720px;
+  max-width: 90%;
 }
 
 .meus-filmes ul li {

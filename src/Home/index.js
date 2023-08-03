@@ -14,11 +14,10 @@ function Home() {
                 params: {
                     api_key: "85b4aa43936f2e42349897e7d5a612be",
                     language: "pt-BR",
-                    page: 1,
                 }
             })
 
-            setFilmes(response.data.results.slice(0, 10));
+            setFilmes(response.data.results);
             setLoading(false);
             console.log(process.env.API_KEy)
         }

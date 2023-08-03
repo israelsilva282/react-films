@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Projeto de Filmes em ReactJS com API TMDB
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto desenvolvido em ReactJS que utiliza a API TMDB (The Movie Database) para exibir filmes na tela inicial, permitir o acesso a informações detalhadas de um filme específico e possibilitar a funcionalidade de salvar filmes, armazenando-os no Local Storage do navegador.
 
-## Available Scripts
+## Instalação
 
-In the project directory, you can run:
+Antes de executar o projeto, é necessário ter o Node.js e o npm instalados em sua máquina. Caso ainda não tenha, você pode baixá-los e instalá-los através do site oficial do Node.js.
 
-### `npm start`
+Após instalar o Node.js, siga os passos abaixo:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone este repositório para o seu computador usando o seguinte comando:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   ```
 
-### `npm test`
+2. Navegue até o diretório do projeto:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```
+   cd nome-do-repositorio
+   ```
 
-### `npm run build`
+3. Instale as dependências do projeto usando o npm:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Execução
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Inicie o servidor de desenvolvimento:
 
-### `npm run eject`
+```
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+O comando acima irá iniciar o servidor de desenvolvimento e o projeto estará disponível no navegador através do endereço http://localhost:3000.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Funcionalidades
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Ver Filmes na Tela Inicial:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+A tela inicial do projeto exibirá uma lista de filmes populares obtidos através da API TMDB. Cada filme será representado por uma miniatura contendo informações como título, imagem do pôster, entre outros.
 
-## Learn More
+#### Acessar um Filme Específico:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Ao clicar em um filme da tela inicial, o usuário será direcionado para a página de detalhes do filme, onde encontrará informações mais completas sobre o filme selecionado, como sinopse, elenco, classificação, entre outros. Essas informações também serão obtidas através da API TMDB.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Salvar Filme:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+O projeto possui a funcionalidade de permitir que o usuário salve um filme específico em sua lista de favoritos. Para fazer isso, basta clicar no botão de "Salvar" disponível na página de detalhes do filme. O filme selecionado será então armazenado no Local Storage do navegador.
